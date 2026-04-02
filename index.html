@@ -2,34 +2,122 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>兪澈 車 | Homepage</title>
   <style>
     body {
-      background: yellow;
-      text-align: center;
-      margin-top: 50px;
+      margin: 0;
       font-family: sans-serif;
+      background: #f4f6f8;
+      color: #333;
     }
 
-    h1 {
-      color: blue;
-      font-size: 48px;
+    header {
+      background: #1f3b57;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
     .card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 40px auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
 
+    h2 {
+      color: #1f3b57;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-  <h1>反映テスト</h1>
-  <p>背景が黄色なら成功です。</p>
-  </div>  
+
+  <header>
+    <h1>兪澈 車</h1>
+    <p>Researcher / Personal Homepage</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card" id="about">
+      <h2>About</h2>
+      <p>
+        ここに自己紹介を書きます。所属、専門、研究分野などを簡単に入れてください。
+      </p>
+    </div>
+
+    <div class="card" id="research">
+      <h2>Research</h2>
+      <p>
+        ここに研究内容を書きます。現在取り組んでいるテーマや、興味のある分野を書いてください。
+      </p>
+    </div>
+
+    <div class="card" id="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li>論文タイトル 1</li>
+        <li>論文タイトル 2</li>
+        <li>論文タイトル 3</li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: your-email@example.com</p>
+      <p>GitHub: <a href="https://github.com/">https://github.com/</a></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 兪澈 車
+  </footer>
+
 </body>
 </html>
